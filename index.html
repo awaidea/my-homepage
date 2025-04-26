@@ -1,25 +1,29 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
-    <meta name="renderer" content="webkit"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta name="renderer" content="webkit">
+    <!-- 引入 mdui.css 样式文件 -->
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <!-- 引入 mdui.global.js 脚本文件 -->
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
-    <!-- 如果使用了组件的 icon 属性，还需要引入图标的 CSS 文件 -->
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
+    <!-- 引入 Material Icons 的 CSS 文件（假设使用 Material Icons） -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>I'm WinterCat</title>
+</head>
+<body>
     <mdui-tabs value="tab-1">
-  <mdui-tab value="tab-1">Home</mdui-tab>
-  <mdui-tab value="tab-2">Info</mdui-tab>
-  <mdui-tab value="tab-3">Contect</mdui-tab>
-
-  <mdui-tab-panel slot="panel" value="tab-1"><mdui-card clickable style="width: 200px;height: 124px"><mdui-avatar src="https://file.catp.cc/avatar.png></mdui-avatar></mdui-card></mdui-tab-panel>
-  <mdui-tab-panel slot="panel" value="tab-2">Panel 2</mdui-tab-panel>
-  <mdui-tab-panel slot="panel" value="tab-3">Panel 3</mdui-tab-panel>
-</mdui-tabs>
-  </body>
+        <mdui-tab value="tab-1">Home</mdui-tab>
+        <mdui-tab value="tab-2">Info</mdui-tab>
+        <mdui-tab value="tab-3">Contact</mdui-tab> <!-- 修正拼写错误 -->
+        <mdui-tab-panel slot="panel" value="tab-1">
+            <mdui-card clickable style="width: 200px;height: 124px;">
+                <mdui-avatar src="https://file.catp.cc/avatar.png"></mdui-avatar> <!-- 修正标签闭合问题 -->
+            </mdui-card>
+        </mdui-tab-panel>
+        <mdui-tab-panel slot="panel" value="tab-2">Panel 2</mdui-tab-panel>
+        <mdui-tab-panel slot="panel" value="tab-3">Panel 3</mdui-tab-panel>
+    </mdui-tabs>
+</body>
 </html>
