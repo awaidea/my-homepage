@@ -10,20 +10,36 @@
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     <!-- 引入 Material Icons 的 CSS 文件（假设使用 Material Icons） -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>I'm WinterCat</title>
+    <title>I'm WinterCat!</title>
+    <style>
+      .flex-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .responsive-card {
+          width: 20%;
+          min-width: 200px;
+          margin: 10px;
+      }
+    </style>
 </head>
 <body>
     <mdui-tabs value="tab-1">
         <mdui-tab value="tab-1">Home</mdui-tab>
         <mdui-tab value="tab-2">Info</mdui-tab>
-        <mdui-tab value="tab-3">Contact</mdui-tab> <!-- 修正拼写错误 -->
+        <mdui-tab value="tab-3">Contact</mdui-tab>
         <mdui-tab-panel slot="panel" value="tab-1">
-            <mdui-card clickable style="width: 200px;height: 124px;">
-                <mdui-avatar src="https://file.catp.cc/avatar.png"></mdui-avatar> <!-- 修正标签闭合问题 -->
-            </mdui-card>
+            <div class="flex-container">
+                <mdui-card class="responsive-card" clickable>
+                    <mdui-avatar src="https://file.catp.cc/avatar.png"></mdui-avatar>
+                </mdui-card>
+            </div>
         </mdui-tab-panel>
         <mdui-tab-panel slot="panel" value="tab-2">Panel 2</mdui-tab-panel>
         <mdui-tab-panel slot="panel" value="tab-3">Panel 3</mdui-tab-panel>
     </mdui-tabs>
 </body>
 </html>
+    
